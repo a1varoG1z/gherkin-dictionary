@@ -18,7 +18,7 @@ Powerful step library for AgileTest. Indexes all Gherkin steps, provides smart s
 
 Access the live dictionary at:
 ```
-https://alvaro-gonzalez_izertis.github.io/gherkin-dictionary/
+https://a1varoG1z.github.io/gherkin-dictionary/
 ```
 
 ## Quick Start
@@ -45,7 +45,7 @@ https://alvaro-gonzalez_izertis.github.io/gherkin-dictionary/
 
 1. **Push to GitHub**:
    ```bash
-   git remote add origin https://github.com/alvaro-gonzalez_izertis/gherkin-dictionary.git
+   git remote add origin https://github.com/a1varoG1z/gherkin-dictionary.git
    git branch -M main
    git push -u origin main
    ```
@@ -65,7 +65,7 @@ https://alvaro-gonzalez_izertis.github.io/gherkin-dictionary/
 
 4. **Access Your Site**:
    ```
-   https://alvaro-gonzalez_izertis.github.io/gherkin-dictionary/
+   https://a1varoG1z.github.io/gherkin-dictionary/
    ```
 
 ### Automated Updates

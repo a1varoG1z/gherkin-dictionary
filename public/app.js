@@ -101,7 +101,7 @@ if (syncBtn) {
     try {
       // GitHub repository dispatch requires a Personal Access Token
       // This token must be stored as GITHUB_TOKEN secret in repository settings
-      const response = await fetch("https://api.github.com/repos/alvaro-gonzalez_izertis/gherkin-dictionary/dispatches", {
+      const response = await fetch("https://api.github.com/repos/a1varoG1z/gherkin-dictionary/dispatches", {
         method: "POST",
         headers: {
           "Accept": "application/vnd.github.v3+json",
