@@ -1,0 +1,543 @@
+{
+  "generatedAt": "2026-02-12T15:32:01.909Z",
+  "jiraBaseUrl": "https://dgomezpaiscorral.atlassian.net",
+  "agileTestBaseUrl": "https://agiletest.atlas.devsamurai.com",
+  "projectId": "10033",
+  "projectName": "DEMCF",
+  "totalIssues": 9,
+  "totalSteps": 42,
+  "steps": [
+    {
+      "step": "Given the user logs in",
+      "count": 5,
+      "testCases": [
+        {
+          "id": "1180607",
+          "issueId": "10679",
+          "name": "Test Case 1180607"
+        },
+        {
+          "id": "1178511",
+          "issueId": "10646",
+          "name": "Test Case 1178511"
+        },
+        {
+          "id": "1178508",
+          "issueId": "10645",
+          "name": "Test Case 1178508"
+        },
+        {
+          "id": "1178398",
+          "issueId": "10644",
+          "name": "Test Case 1178398"
+        },
+        {
+          "id": "1177645",
+          "issueId": "10611",
+          "name": "Test Case 1177645"
+        }
+      ]
+    },
+    {
+      "step": "When the user starts a new cutting request",
+      "count": 5,
+      "testCases": [
+        {
+          "id": "1180607",
+          "issueId": "10679",
+          "name": "Test Case 1180607"
+        },
+        {
+          "id": "1178511",
+          "issueId": "10646",
+          "name": "Test Case 1178511"
+        },
+        {
+          "id": "1178508",
+          "issueId": "10645",
+          "name": "Test Case 1178508"
+        },
+        {
+          "id": "1178398",
+          "issueId": "10644",
+          "name": "Test Case 1178398"
+        },
+        {
+          "id": "1177645",
+          "issueId": "10611",
+          "name": "Test Case 1177645"
+        }
+      ]
+    },
+    {
+      "step": "And the \"Expedientes\" table is displayed",
+      "count": 2,
+      "testCases": [
+        {
+          "id": "1177639",
+          "issueId": "10609",
+          "name": "Test Case 1177639"
+        },
+        {
+          "id": "1177631",
+          "issueId": "10607",
+          "name": "Test Case 1177631"
+        }
+      ]
+    },
+    {
+      "step": "And the user clicks \"Guardar\" button",
+      "count": 2,
+      "testCases": [
+        {
+          "id": "1180607",
+          "issueId": "10679",
+          "name": "Test Case 1180607"
+        },
+        {
+          "id": "1178398",
+          "issueId": "10644",
+          "name": "Test Case 1178398"
+        }
+      ]
+    },
+    {
+      "step": "And the user selects \"DNI\" as identification type",
+      "count": 2,
+      "testCases": [
+        {
+          "id": "1178398",
+          "issueId": "10644",
+          "name": "Test Case 1178398"
+        },
+        {
+          "id": "1177645",
+          "issueId": "10611",
+          "name": "Test Case 1177645"
+        }
+      ]
+    },
+    {
+      "step": "And the user selects \"Titula/Cotitular\"",
+      "count": 2,
+      "testCases": [
+        {
+          "id": "1178398",
+          "issueId": "10644",
+          "name": "Test Case 1178398"
+        },
+        {
+          "id": "1177645",
+          "issueId": "10611",
+          "name": "Test Case 1177645"
+        }
+      ]
+    },
+    {
+      "step": "Then the \"Solicitudes\" table is displayed",
+      "count": 2,
+      "testCases": [
+        {
+          "id": "1177639",
+          "issueId": "10609",
+          "name": "Test Case 1177639"
+        },
+        {
+          "id": "1177631",
+          "issueId": "10607",
+          "name": "Test Case 1177631"
+        }
+      ]
+    },
+    {
+      "step": "When the user selects the \"Cortas\" option from the main menu",
+      "count": 2,
+      "testCases": [
+        {
+          "id": "1177639",
+          "issueId": "10609",
+          "name": "Test Case 1177639"
+        },
+        {
+          "id": "1177631",
+          "issueId": "10607",
+          "name": "Test Case 1177631"
+        }
+      ]
+    },
+    {
+      "step": "And all tables are filtered by the user's municipality",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1177631",
+          "issueId": "10607",
+          "name": "Test Case 1177631"
+        }
+      ]
+    },
+    {
+      "step": "And clicks \"Buscar representación\"",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1178508",
+          "issueId": "10645",
+          "name": "Test Case 1178508"
+        }
+      ]
+    },
+    {
+      "step": "And clicks \"Guardar\"",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1178511",
+          "issueId": "10646",
+          "name": "Test Case 1178511"
+        }
+      ]
+    },
+    {
+      "step": "And clicks the \"Buscar\" button",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1177643",
+          "issueId": "10610",
+          "name": "Test Case 1177643"
+        }
+      ]
+    },
+    {
+      "step": "And enters representative DNI and owner DNI",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1178508",
+          "issueId": "10645",
+          "name": "Test Case 1178508"
+        }
+      ]
+    },
+    {
+      "step": "And fills in the authorized person data",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1178511",
+          "issueId": "10646",
+          "name": "Test Case 1178511"
+        }
+      ]
+    },
+    {
+      "step": "And searches a person by NIF",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1177645",
+          "issueId": "10611",
+          "name": "Test Case 1177645"
+        }
+      ]
+    },
+    {
+      "step": "And the \"Informes\" table is displayed",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1177631",
+          "issueId": "10607",
+          "name": "Test Case 1177631"
+        }
+      ]
+    },
+    {
+      "step": "And the \"Informes\" table is not displayed",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1177639",
+          "issueId": "10609",
+          "name": "Test Case 1177639"
+        }
+      ]
+    },
+    {
+      "step": "And the applicant is saved",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1178398",
+          "issueId": "10644",
+          "name": "Test Case 1178398"
+        }
+      ]
+    },
+    {
+      "step": "And the system navigates to parcel selection step",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1178511",
+          "issueId": "10646",
+          "name": "Test Case 1178511"
+        }
+      ]
+    },
+    {
+      "step": "And the user clicks \"Añadir recintos\" button",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1180607",
+          "issueId": "10679",
+          "name": "Test Case 1180607"
+        }
+      ]
+    },
+    {
+      "step": "And the user clicks \"Siguiente\" button",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1178398",
+          "issueId": "10644",
+          "name": "Test Case 1178398"
+        }
+      ]
+    },
+    {
+      "step": "And the user has a municipality assigned",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1177631",
+          "issueId": "10607",
+          "name": "Test Case 1177631"
+        }
+      ]
+    },
+    {
+      "step": "And the user is filling cutting request parcel data",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1180607",
+          "issueId": "10679",
+          "name": "Test Case 1180607"
+        }
+      ]
+    },
+    {
+      "step": "And the user selects \"Autorizado\"",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1178511",
+          "issueId": "10646",
+          "name": "Test Case 1178511"
+        }
+      ]
+    },
+    {
+      "step": "And the user selects \"Representante legal\"",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1178508",
+          "issueId": "10645",
+          "name": "Test Case 1178508"
+        }
+      ]
+    },
+    {
+      "step": "And the user selects a person",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1178398",
+          "issueId": "10644",
+          "name": "Test Case 1178398"
+        }
+      ]
+    },
+    {
+      "step": "And the user selects and identify as \"Titula/Cotitular\"",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1180607",
+          "issueId": "10679",
+          "name": "Test Case 1180607"
+        }
+      ]
+    },
+    {
+      "step": "Given the user is viewing the cutting requests page",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1177643",
+          "issueId": "10610",
+          "name": "Test Case 1177643"
+        }
+      ]
+    },
+    {
+      "step": "Given the user is viewing the cutting requests tables",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1177637",
+          "issueId": "10608",
+          "name": "Test Case 1177637"
+        }
+      ]
+    },
+    {
+      "step": "Given the user logs in with role \"<role>\"",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1177639",
+          "issueId": "10609",
+          "name": "Test Case 1177639"
+        }
+      ]
+    },
+    {
+      "step": "Given the user logs in with role \"basozaina\"",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1177631",
+          "issueId": "10607",
+          "name": "Test Case 1177631"
+        }
+      ]
+    },
+    {
+      "step": "Then the applicant is saved",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1178511",
+          "issueId": "10646",
+          "name": "Test Case 1178511"
+        }
+      ]
+    },
+    {
+      "step": "Then the next page of results is displayed",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1177637",
+          "issueId": "10608",
+          "name": "Test Case 1177637"
+        }
+      ]
+    },
+    {
+      "step": "Then the parcels belonging to the exploitation is displayed",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1180607",
+          "issueId": "10679",
+          "name": "Test Case 1180607"
+        }
+      ]
+    },
+    {
+      "step": "Then the system displays the applicant personal data",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1177645",
+          "issueId": "10611",
+          "name": "Test Case 1177645"
+        }
+      ]
+    },
+    {
+      "step": "Then the system finds the legal representation",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1178508",
+          "issueId": "10645",
+          "name": "Test Case 1178508"
+        }
+      ]
+    },
+    {
+      "step": "Then the system navigates to parcel selection step",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1178398",
+          "issueId": "10644",
+          "name": "Test Case 1178398"
+        }
+      ]
+    },
+    {
+      "step": "Then the table displays the selected page results",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1177637",
+          "issueId": "10608",
+          "name": "Test Case 1177637"
+        }
+      ]
+    },
+    {
+      "step": "Then the tables are filtered according to the entered criteria",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1177643",
+          "issueId": "10610",
+          "name": "Test Case 1177643"
+        }
+      ]
+    },
+    {
+      "step": "When the user clicks on \"Siguiente\"",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1177637",
+          "issueId": "10608",
+          "name": "Test Case 1177637"
+        }
+      ]
+    },
+    {
+      "step": "When the user clicks on a page number",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1177637",
+          "issueId": "10608",
+          "name": "Test Case 1177637"
+        }
+      ]
+    },
+    {
+      "step": "When the user enters search criteria",
+      "count": 1,
+      "testCases": [
+        {
+          "id": "1177643",
+          "issueId": "10610",
+          "name": "Test Case 1177643"
+        }
+      ]
+    }
+  ]
+}
