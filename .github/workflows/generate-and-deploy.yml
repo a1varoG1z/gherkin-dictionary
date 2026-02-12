@@ -1,0 +1,59 @@
+name: Generate & Deploy to GitHub Pages
+
+on:
+  # Scheduled run every day at midnight (23:00 UTC = 00:00 CET in winter)
+  schedule:
+    - cron: '0 23 * * *'
+  
+  # Manual trigger from GitHub UI or API
+  workflow_dispatch:
+  
+  # Also run on push to main (optional)
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  generate-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate data.json from AgileTest
+        run: npm run generate
+        env:
+          AGILETEST_AUTH_BASE_URL: ${{ secrets.AGILETEST_AUTH_BASE_URL }}
+          AGILETEST_API_BASE_URL: ${{ secrets.AGILETEST_API_BASE_URL }}
+          AGILETEST_CLIENT_ID: ${{ secrets.AGILETEST_CLIENT_ID }}
+          AGILETEST_CLIENT_SECRET: ${{ secrets.AGILETEST_CLIENT_SECRET }}
+          AGILETEST_PROJECT_ID: ${{ secrets.AGILETEST_PROJECT_ID }}
+          AGILETEST_LIMIT: 500
+          JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'public'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

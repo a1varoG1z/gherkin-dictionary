@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gherkin Dictionary</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="top-bar">
+        <img src="izertis-logo.png" alt="Company Logo" class="logo" />
+        <div class="top-info">
+          <h2>Gherkin Dictionary</h2>
+          <div class="info-links">
+            <button id="syncBtn" class="sync-btn" title="Sync with Jira/AgileTest">🔄 Sync</button>
+            <a href="https://cucumber.io/docs/gherkin/" target="_blank" rel="noreferrer">📖 Gherkin Docs</a>
+          </div>
+        </div>
+      </header>
+
+      <section id="examples" class="info-section">
+        <h3>Gherkin Syntax Guide</h3>
+        <div class="examples-grid">
+          <div class="example-card">
+            <strong>Given (Initial State)</strong>
+            <code>Given the user is in login page</code>
+          </div>
+          <div class="example-card">
+            <strong>When (Action)</strong>
+            <code>When the user clicks "submit" button in "login" page</code>
+          </div>
+          <div class="example-card">
+            <strong>Then (Expected Result)</strong>
+            <code>Then the user should be in "home" page</code>
+          </div>
+          <div class="example-card">
+            <strong>And (Continuation)</strong>
+            <code>And "home" page should be loaded</code>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <header class="header">
+          <div>
+            <h1>Step Library</h1>
+            <p id="projectInfo">Search and discover Gherkin steps across your test suite.</p>
+          </div>
+        </header>
+
+        <div class="search-container">
+          <div class="search-input-wrapper">
+            <input id="stepQuery" type="text" placeholder="Search steps... (e.g., 'user logs', 'button')" class="search-input" />
+            <div id="searchHistory" class="search-history"></div>
+          </div>
+          <div id="similarity" class="similarity"></div>
+        </div>
+
+        <div class="controls">
+          <div class="filters">
+            <label class="filter-label">Keyword:</label>
+            <button class="filter-btn active" data-keyword="all">All</button>
+            <button class="filter-btn" data-keyword="Given">Given</button>
+            <button class="filter-btn" data-keyword="When">When</button>
+            <button class="filter-btn" data-keyword="Then">Then</button>
+          </div>
+          
+          <div class="sort-controls">
+            <label class="sort-label">Sort by:</label>
+            <select id="sortBy" class="sort-select">
+              <option value="relevance">Relevance</option>
+              <option value="frequency">Frequency (High→Low)</option>
+              <option value="alphabetic">Alphabetic (A→Z)</option>
+              <option value="reuse">Reuse % (High→Low)</option>
+            </select>
+          </div>
+
+          <div class="sort-controls">
+            <label class="sort-label">Test Case:</label>
+            <select id="testCaseFilter" class="sort-select">
+              <option value="">All Test Cases</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="status" class="status"></div>
+        <div id="modeNote" class="mode-note"></div>
+
+        <section class="results">
+          <div class="summary" id="summary"></div>
+          <ul id="stepsList" class="steps"></ul>
+        </section>
+
+        <section class="metrics">
+          <h3>📊 Metrics</h3>
+          <div class="metrics-grid">
+            <div class="metric-item">
+              <span class="metric-label">Total Steps</span>
+              <span class="metric-value" id="metricSteps">0</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-label">Test Cases</span>
+              <span class="metric-value" id="metricIssues">0</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-label">Reuse Avg</span>
+              <span class="metric-value" id="metricReuse">0%</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-label">High Reuse</span>
+              <span class="metric-value" id="metricHighReuse">0</span>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
