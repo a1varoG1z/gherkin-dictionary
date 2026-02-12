@@ -199,7 +199,7 @@ async function init() {
 async function fetchStaticData() {
   try {
     console.log("Fetching data.json...");
-    const response = await fetch("/data.json", { cache: "no-store" });
+    const response = await fetch("./data.json", { cache: "no-store" });
     console.log("Fetch response status:", response.status, response.statusText);
     
     if (!response.ok) {
