@@ -12,6 +12,7 @@ const testCaseFilterEl = document.getElementById("testCaseFilter");
 let jiraBaseUrl = "";
 let agileTestBaseUrl = "";
 let projectId = "";
+let totalIssues = 0;
 let allSteps = [];
 let filteredSteps = [];
 let selectedKeyword = "all";
@@ -174,6 +175,7 @@ async function init() {
     jiraBaseUrl = staticData.jiraBaseUrl || jiraBaseUrl;
     agileTestBaseUrl = staticData.agileTestBaseUrl || agileTestBaseUrl;
     projectId = staticData.projectId || projectId;
+    totalIssues = staticData.totalIssues || 0;
     allSteps = staticData.steps || [];
     
     if (!allSteps.length) {
@@ -556,7 +558,6 @@ function renderSteps(steps) {
   stepsList.innerHTML = ""; // Clear first
 
   const fragment = document.createDocumentFragment();
-  const totalTestCases = 9; // Based on data.json, we have 9 test cases
 
   for (const item of steps) {
     const li = document.createElement("li");
@@ -569,16 +570,17 @@ function renderSteps(steps) {
     const meta = document.createElement("div");
     meta.className = "step-meta";
     
-    // Reuse statistics
-    const reusePercent = Math.round((item.count / totalTestCases) * 100);
-    const reuseIntensity = item.count >= 5 ? "🔥" : item.count >= 3 ? "🌟" : "";
+    // Reuse statistics - use unique test case count
+    const numTestCases = item.testCases ? item.testCases.length : item.count;
+    const reusePercent = totalIssues > 0 ? Math.round((numTestCases / totalIssues) * 100) : 0;
+    const reuseIntensity = numTestCases >= 5 ? "🔥" : numTestCases >= 3 ? "🌟" : "";
     
     const countSpan = document.createElement("span");
     countSpan.className = "step-reuse";
-    countSpan.textContent = `${item.count} test(s) ${reuseIntensity}`;
+    countSpan.textContent = `${numTestCases} test(s) ${reuseIntensity}`;
     
     const descSpan = document.createElement("span");
-    descSpan.textContent = `${reusePercent}% reuse • Used in ${item.count} test case${item.count !== 1 ? "s" : ""}`;
+    descSpan.textContent = `${reusePercent}% reuse • Used in ${numTestCases} test case${numTestCases !== 1 ? "s" : ""}`;
     
     meta.appendChild(countSpan);
     meta.appendChild(descSpan);
